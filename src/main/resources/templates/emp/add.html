@@ -70,7 +70,7 @@
                 </div>
                 <div class="form-group">
                     <label for="birthDate">Birth</label>
-                    <input type="text" class="form-control" id="birthDate" placeholder="2012-12-12" name="birth" th:value="${emp!=null}?${#dates.format(emp.birth,'yyyy-MM-dd HH:mm:ss')}">
+                    <input type="text" class="form-control" id="birthDate" placeholder="例：2012-12-12" name="birth" th:value="${emp!=null}?${#dates.format(emp.birth,'yyyy-MM-dd HH:mm:ss')}">
                 </div>
                 <button type="submit" class="btn btn-primary" th:text="${emp!=null}?'修改':'添加'">添 加</button>
             </form>
